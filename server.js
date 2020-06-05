@@ -24,9 +24,9 @@ var server = http.createServer(function(request, response){
     //默认首页
     const filePath = path === "/" ? "/index.html" : path
     const index = filePath.lastIndexOf(".")
+
+    //path的后缀, eg: .html
     const suffix = filePath.substring(index)
-    console.log(`filePath: ${filePath}`)
-    console.log(`suffix: ${suffix}`)
 
     const fileTypes = {
         '.html':'text/html',
