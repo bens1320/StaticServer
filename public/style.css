@@ -1,4 +1,9 @@
 
-div{
+div > h1{
     color: red;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
